@@ -79,19 +79,6 @@ export default withFormik({
         message: '',
     }),
 
-    validate: values => {
-        const errors = {};
-
-        Object.keys(values).map(v => {
-            if (!values[v]) {
-                errors[v] = "Required";
-            }
-        });
-
-        return errors;
-
-    },
-
     handleSubmit: (values, { setSubmitting }) => {
         console.log(" Values : ", values);
         alert("You've sumbitted the form", JSON.stringify(values))

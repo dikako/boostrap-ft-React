@@ -10,12 +10,14 @@
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "yup": "^0.28.5"
   },
   "scripts": {
     "homepage": "https://dikako.github.io/boostrap-ft-React/",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "prod": "npm start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
